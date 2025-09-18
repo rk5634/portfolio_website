@@ -76,7 +76,7 @@ export function AboutSection() {
                     <span className="flex items-center gap-2 text-muted-foreground">
                       <Target className="h-4 w-4" /> Focus
                     </span>
-                    <span className="text-sm sm:text-base">Backend + ML</span>
+                    <span className="text-sm sm:text-base">Backend + Machine Learning</span>
                   </div>
 
                   {/* Current Role */}
