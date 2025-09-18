@@ -14,13 +14,17 @@ export function Footer() {
           viewport={{ once: true }}
           className="text-center space-y-4"
         >
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            <span>© {new Date().getFullYear()} {personalInfo.name}. Made with</span>
+          {/* Main footer line */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
+            <span>
+              © {new Date().getFullYear()} {personalInfo.name}. Made with
+            </span>
             <Heart className="h-4 w-4 text-red-500 fill-current" />
             <span>and Next.js</span>
           </div>
-          
-          <p className="text-sm text-muted-foreground">
+
+          {/* Tagline */}
+          <p className="text-xs sm:text-sm text-muted-foreground">
             Building scalable backend systems and intelligent ML solutions
           </p>
         </motion.div>

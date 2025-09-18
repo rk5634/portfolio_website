@@ -49,70 +49,68 @@ export function AboutSection() {
           </motion.div>
 
           {/* Quick Facts */}
-          <motion.div variants={item} >
+          <motion.div variants={item}>
             <Card>
               <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold mb-4 text-center justify-center">Quick Facts</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center">Quick Facts</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between">
+
+                  {/* Location */}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <span className="flex items-center gap-2 text-muted-foreground">
                       <MapPin className="h-4 w-4" /> Location
                     </span>
-                    <span>{personalInfo.location}</span>
+                    <span className="text-sm sm:text-base">{personalInfo.location}</span>
                   </div>
-                  <div className="flex items-center justify-between">
+
+                  {/* Experience */}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <span className="flex items-center gap-2 text-muted-foreground">
                       <Briefcase className="h-4 w-4" /> Experience
                     </span>
-                    <span>2+ years</span>
+                    <span className="text-sm sm:text-base">2+ years</span>
                   </div>
-                  <div className="flex items-center justify-between">
+
+                  {/* Focus */}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <span className="flex items-center gap-2 text-muted-foreground">
                       <Target className="h-4 w-4" /> Focus
                     </span>
-                    <span>Backend + ML</span>
+                    <span className="text-sm sm:text-base">Backend + ML</span>
                   </div>
-                  <div className="flex items-center justify-between">
+
+                  {/* Current Role */}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <span className="flex items-center gap-2 text-muted-foreground">
                       <Rocket className="h-4 w-4" /> Current Role
                     </span>
-                    <span>Software Engineer @ Axtria</span>
+                    <span className="text-sm sm:text-base">Software Engineer @ Axtria</span>
                   </div>
-                  <div className="flex items-center justify-between">
+
+                  {/* Education */}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <span className="flex items-center gap-2 text-muted-foreground">
                       <GraduationCap className="h-4 w-4" /> Education
                     </span>
-                    <span>B.Tech - Computer Science (2025)</span>
+                    <span className="text-sm sm:text-base">B.Tech - Computer Science (2025)</span>
                   </div>
-                  {/* <div className="flex items-center justify-between">
-                    <span className="flex items-center gap-2 text-muted-foreground">
-                      <Code2 className="h-4 w-4" /> Tech Stack
-                    </span>
-                    <span>Go, Python, AWS, Postgres</span>
-                  </div> */}
-                  <div className="flex items-center justify-between">
+
+                  {/* Languages */}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <span className="flex items-center gap-2 text-muted-foreground">
                       <Languages className="h-4 w-4" /> Languages
                     </span>
-                    <span>English, Spanish, Hindi</span>
+                    <span className="text-sm sm:text-base">English, Spanish, Hindi</span>
                   </div>
-                  {/* <div className="flex items-center justify-between">
-                    <span className="flex items-center gap-2 text-muted-foreground">
-                      <Mail className="h-4 w-4" /> Contact
-                    </span>
-                    <a
-                      href="mailto:rajiv@example.com"
-                      className="text-primary hover:underline"
-                    >
-                      rajiv0099c@gmail.com
-                    </a>
-                  </div> */}
-                  <div className="flex items-center justify-between">
+
+                  {/* Availability */}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <span className="flex items-center gap-2 text-muted-foreground">
                       <CheckCircle className="h-4 w-4" /> Availability
                     </span>
                     <Badge variant="secondary">Open to opportunities</Badge>
                   </div>
+
                 </div>
               </CardContent>
             </Card>
